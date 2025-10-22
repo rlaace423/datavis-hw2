@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>datavis HW2</title>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.0.2"></script>
+  </head>
+  <body>
+    <div><div id="vis1"></div></div>
+    <div><div id="vis2"></div></div>
+    <div><div id="vis3"></div></div>
+    <div><div id="vis4"></div></div>
+    <div>
+      <div id="vis5"></div>
+      <div id="vis6"></div>
+    </div>
+    <script type="module">
+      import {
+        loadAllData,
+        buildBtcDxy,
+        buildBtcDxyScatter,
+        buildBtcEthXrpCorrHeatMap,
+        buildBtcNasdaqGoldNormalized,
+        buildVolumePrice,
+      } from './index.js';
+
+      const data = await loadAllData();
+
+      vegaEmbed('#vis1', buildBtcDxy(data), { actions: true });
+      vegaEmbed('#vis2', buildBtcDxyScatter(data), { actions: true });
+      vegaEmbed('#vis3', buildBtcEthXrpCorrHeatMap(data), { actions: true });
+      vegaEmbed('#vis4', buildBtcNasdaqGoldNormalized(data), { actions: true });
+      vegaEmbed('#vis5', buildVolumePrice(data.btcVolAbs, 'BTC', [0, 0.2]), { actions: true });
+      vegaEmbed('#vis6', buildVolumePrice(data.goldVolAbs, 'Gold', [0, 0.05]), { actions: true });
+    </script>
+  </body>
+</html>

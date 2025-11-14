@@ -459,3 +459,94 @@ export function buildVolumePrice(volAbs, title, yAxisDomain) {
     ],
   };
 }
+
+function parseEuroValue(str) {
+  if (typeof str !== "string") return null;
+
+  // "€1.31bn", "€920.60m" 같은 문자열 처리
+  let s = str.trim().toLowerCase();
+
+  // 화폐 기호, 콤마, 공백 제거
+  s = s.replace(/€/g, "").replace(/,/g, "").replace(/\s+/g, "");
+
+  let multiplier = 1;
+
+  if (s.endsWith("bn")) {
+    multiplier = 1e9;
+    s = s.slice(0, -2); // 'bn' 제거
+  } else if (s.endsWith("m")) {
+    multiplier = 1e6;
+    s = s.slice(0, -1); // 'm' 제거
+  }
+
+  const value = parseFloat(s);
+  if (Number.isNaN(value)) return null;
+
+  return value * multiplier; // 유로 단위
+}
+
+export async function loadClubValueData() {
+  const raw = await loadCsv('data/club_values.csv');
+
+  // Premier League만 사용 + value 파싱
+  const rows = raw
+    // .filter((r) => r.league_name === 'Premier League' && r.value)
+    .map((r) => {
+      const valueEur = parseEuroValue(r.value);
+      if (valueEur == null) return null;
+
+      return {
+        // Vega-Lite가 자동으로 temporal로 파싱할 수 있도록 ISO 문자열 그대로 사용
+        date: r.date,                 // "2025-01-01"
+        club_name: r.club_name,       // "Arsenal FC"
+        value_eur: valueEur,          // 숫자(유로)
+        value_eur_million: valueEur / 1e6, // 보기 좋게 백만 단위로 변환
+      };
+    })
+    .filter(Boolean);
+
+  return rows;
+}
+
+export function buildClubValueLineSpec(clubValues) {
+  return {
+    width: 900,
+    height: 500,
+    data: {
+      values: clubValues,
+    },
+    params: [
+      {
+        name: 'clubHighlight',
+        select: { type: 'point', fields: ['club_name'], bind: 'legend' },
+      },
+    ],
+    mark: {
+      type: 'line',
+      point: true,
+      tooltip: true,
+    },
+    encoding: {
+      x: {
+        field: 'date',
+        type: 'temporal',
+        title: 'Date',
+      },
+      y: {
+        field: 'value_eur_million',
+        type: 'quantitative',
+        title: 'Club Market Value (million €)',
+      },
+      color: {
+        field: 'club_name',
+        type: 'nominal',
+        title: 'Club',
+        legend: { title: 'Club (click to highlight)' },
+      },
+      opacity: {
+        condition: { param: 'clubHighlight', value: 1 },
+        value: 0.25,
+      },
+    },
+  };
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <title>Line Chart</title>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.0.2"></script>
+</head>
+<body>
+<div><div id="vis"></div></div>
+
+<script type="module">
+  import {
+    loadClubValueData,
+    buildClubValueLineSpec,
+  } from './index.js';
+
+  const data = await loadClubValueData();
+
+  // 월별 각 EPL 클럽의 구단 가치 변화 라인 차트
+  vegaEmbed('#vis', buildClubValueLineSpec(data), { actions: true });
+</script>
+</body>
+</html>

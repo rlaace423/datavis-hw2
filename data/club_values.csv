@@ -1,0 +1,221 @@
+date,num,club_name,club_name_2,league_name,value,value_2,updown
+2025-11-01,1,Arsenal FC,Arsenal FC,Premier League,€1.31bn,€1.31bn,-
+2025-11-01,2,Manchester City,Manchester City,Premier League,€1.21bn,€1.21bn,-
+2025-11-01,3,Liverpool FC,Liverpool FC,Premier League,€1.15bn,€1.15bn,-
+2025-11-01,4,Chelsea FC,Chelsea FC,Premier League,€1.14bn,€1.14bn,-
+2025-11-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€920.60m,€920.60m,-
+2025-11-01,6,Newcastle United,Newcastle United,Premier League,€751.83m,€751.83m,-
+2025-11-01,7,Manchester United,Manchester United,Premier League,€730.20m,€730.20m,-
+2025-11-01,8,Nottingham Forest,Nottingham Forest,Premier League,€644.70m,€644.70m,-
+2025-11-01,9,Aston Villa,Aston Villa,Premier League,€546.00m,€546.00m,-
+2025-11-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€520.60m,€520.60m,-
+2025-11-01,11,Crystal Palace,Crystal Palace,Premier League,€484.53m,€484.53m,-
+2025-11-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€448.10m,€448.10m,-
+2025-11-01,13,Brentford FC,Brentford FC,Premier League,€434.90m,€434.90m,-
+2025-11-01,14,Everton FC,Everton FC,Premier League,€414.60m,€414.60m,-
+2025-11-01,15,West Ham United,West Ham United,Premier League,€400.80m,€400.80m,-
+2025-11-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€376.60m,€376.60m,-
+2025-11-01,17,Fulham FC,Fulham FC,Premier League,€374.00m,€374.00m,-
+2025-11-01,18,Sunderland AFC,Sunderland AFC,Premier League,€340.00m,€340.00m,-
+2025-11-01,19,Leeds United,Leeds United,Premier League,€316.30m,€316.30m,-
+2025-11-01,20,Burnley FC,Burnley FC,Premier League,€247.15m,,
+2025-10-01,1,Arsenal FC,Arsenal FC,Premier League,€1.33bn,€1.31bn,-1%
+2025-10-01,2,Manchester City,Manchester City,Premier League,€1.23bn,€1.21bn,-1%
+2025-10-01,3,Liverpool FC,Liverpool FC,Premier League,€1.12bn,€1.15bn,3%
+2025-10-01,4,Chelsea FC,Chelsea FC,Premier League,€1.08bn,€1.14bn,6%
+2025-10-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€891.10m,€920.60m,3%
+2025-10-01,6,Newcastle United,Newcastle United,Premier League,€659.05m,€751.83m,14%
+2025-10-01,7,Manchester United,Manchester United,Premier League,€723.20m,€730.20m,1%
+2025-10-01,8,Nottingham Forest,Nottingham Forest,Premier League,€566.00m,€644.70m,14%
+2025-10-01,9,Aston Villa,Aston Villa,Premier League,€547.00m,€546.00m,0%
+2025-10-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€462.10m,€520.60m,13%
+2025-10-01,11,Crystal Palace,Crystal Palace,Premier League,€426.20m,€484.53m,14%
+2025-10-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€383.00m,€448.10m,17%
+2025-10-01,13,Brentford FC,Brentford FC,Premier League,€392.20m,€434.90m,11%
+2025-10-01,14,Everton FC,Everton FC,Premier League,€368.60m,€414.60m,13%
+2025-10-01,15,West Ham United,West Ham United,Premier League,€371.70m,€400.80m,8%
+2025-10-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€327.80m,€376.60m,15%
+2025-10-01,17,Fulham FC,Fulham FC,Premier League,€337.50m,€374.00m,11%
+2025-10-01,18,Sunderland AFC,Sunderland AFC,Premier League,€290.00m,€340.00m,17%
+2025-10-01,19,Leeds United,Leeds United,Premier League,€296.30m,€316.30m,7%
+2025-10-01,20,Burnley FC,Burnley FC,Premier League,€226.15m,,
+2025-09-01,1,Arsenal FC,Arsenal FC,Premier League,€1.37bn,€1.31bn,-4%
+2025-09-01,2,Manchester City,Manchester City,Premier League,€1.25bn,€1.21bn,-3%
+2025-09-01,3,Liverpool FC,Liverpool FC,Premier League,€1.03bn,€1.15bn,12%
+2025-09-01,4,Chelsea FC,Chelsea FC,Premier League,€1.12bn,€1.14bn,2%
+2025-09-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€890.10m,€920.60m,3%
+2025-09-01,6,Newcastle United,Newcastle United,Premier League,€747.05m,€751.83m,1%
+2025-09-01,7,Manchester United,Manchester United,Premier League,€842.20m,€730.20m,-13%
+2025-09-01,8,Nottingham Forest,Nottingham Forest,Premier League,€540.50m,€644.70m,19%
+2025-09-01,9,Aston Villa,Aston Villa,Premier League,€491.00m,€546.00m,11%
+2025-09-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€564.10m,€520.60m,-8%
+2025-09-01,11,Crystal Palace,Crystal Palace,Premier League,€421.20m,€484.53m,15%
+2025-09-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€373.50m,€448.10m,20%
+2025-09-01,13,Brentford FC,Brentford FC,Premier League,€408.20m,€434.90m,7%
+2025-09-01,14,Everton FC,Everton FC,Premier League,€365.40m,€414.60m,14%
+2025-09-01,15,West Ham United,West Ham United,Premier League,€388.20m,€400.80m,3%
+2025-09-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€318.80m,€376.60m,18%
+2025-09-01,17,Fulham FC,Fulham FC,Premier League,€313.60m,€374.00m,19%
+2025-09-01,18,Sunderland AFC,Sunderland AFC,Premier League,€259.70m,€340.00m,31%
+2025-09-01,19,Leeds United,Leeds United,Premier League,€298.10m,€316.30m,6%
+2025-09-01,20,Burnley FC,Burnley FC,Premier League,€220.85m,,
+2025-08-01,1,Arsenal FC,Arsenal FC,Premier League,€1.32bn,€1.31bn,0%
+2025-08-01,2,Manchester City,Manchester City,Premier League,€1.36bn,€1.21bn,-11%
+2025-08-01,3,Liverpool FC,Liverpool FC,Premier League,€1.08bn,€1.15bn,7%
+2025-08-01,4,Chelsea FC,Chelsea FC,Premier League,€1.21bn,€1.14bn,-6%
+2025-08-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€847.10m,€920.60m,9%
+2025-08-01,6,Newcastle United,Newcastle United,Premier League,€664.60m,€751.83m,13%
+2025-08-01,7,Manchester United,Manchester United,Premier League,€822.20m,€730.20m,-11%
+2025-08-01,8,Nottingham Forest,Nottingham Forest,Premier League,€446.00m,€644.70m,45%
+2025-08-01,9,Aston Villa,Aston Villa,Premier League,€549.00m,€546.00m,-1%
+2025-08-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€593.60m,€520.60m,-12%
+2025-08-01,11,Crystal Palace,Crystal Palace,Premier League,€457.10m,€484.53m,6%
+2025-08-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€435.35m,€448.10m,3%
+2025-08-01,13,Brentford FC,Brentford FC,Premier League,€386.70m,€434.90m,13%
+2025-08-01,14,Everton FC,Everton FC,Premier League,€292.20m,€414.60m,42%
+2025-08-01,15,West Ham United,West Ham United,Premier League,€364.65m,€400.80m,10%
+2025-08-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€320.80m,€376.60m,17%
+2025-08-01,17,Fulham FC,Fulham FC,Premier League,€331.60m,€374.00m,13%
+2025-08-01,18,Sunderland AFC,Sunderland AFC,Premier League,€234.98m,€340.00m,45%
+2025-08-01,19,Leeds United,Leeds United,Premier League,€278.75m,€316.30m,14%
+2025-08-01,20,Burnley FC,Burnley FC,Premier League,€204.90m,,
+2025-07-01,1,Arsenal FC,Arsenal FC,Premier League,€1.12bn,€1.31bn,17%
+2025-07-01,2,Manchester City,Manchester City,Premier League,€1.33bn,€1.21bn,-9%
+2025-07-01,3,Liverpool FC,Liverpool FC,Premier League,€1.14bn,€1.15bn,1%
+2025-07-01,4,Chelsea FC,Chelsea FC,Premier League,€1.22bn,€1.14bn,-7%
+2025-07-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€804.90m,€920.60m,14%
+2025-07-01,6,Newcastle United,Newcastle United,Premier League,€651.03m,€751.83m,16%
+2025-07-01,7,Manchester United,Manchester United,Premier League,€818.00m,€730.20m,-11%
+2025-07-01,8,Nottingham Forest,Nottingham Forest,Premier League,€470.35m,€644.70m,37%
+2025-07-01,9,Aston Villa,Aston Villa,Premier League,€573.80m,€546.00m,-5%
+2025-07-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€737.00m,€520.60m,-29%
+2025-07-01,11,Crystal Palace,Crystal Palace,Premier League,€458.70m,€484.53m,6%
+2025-07-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€421.15m,€448.10m,6%
+2025-07-01,13,Brentford FC,Brentford FC,Premier League,€438.08m,€434.90m,-1%
+2025-07-01,14,Everton FC,Everton FC,Premier League,€264.20m,€414.60m,57%
+2025-07-01,15,West Ham United,West Ham United,Premier League,€371.50m,€400.80m,8%
+2025-07-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€313.30m,€376.60m,20%
+2025-07-01,17,Fulham FC,Fulham FC,Premier League,€332.10m,€374.00m,13%
+2025-07-01,18,Sunderland AFC,Sunderland AFC,Premier League,€151.75m,€340.00m,124%
+2025-07-01,19,Leeds United,Leeds United,Premier League,€237.75m,€316.30m,33%
+2025-07-01,20,Burnley FC,Burnley FC,Premier League,€229.70m,,
+2025-06-01,1,Arsenal FC,Arsenal FC,Premier League,€1.10bn,€1.31bn,19%
+2025-06-01,2,Manchester City,Manchester City,Premier League,€1.18bn,€1.21bn,3%
+2025-06-01,3,Liverpool FC,Liverpool FC,Premier League,€867.50m,€1.15bn,33%
+2025-06-01,4,Chelsea FC,Chelsea FC,Premier League,€913.80m,€1.14bn,24%
+2025-06-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€766.10m,€920.60m,20%
+2025-06-01,6,Newcastle United,Newcastle United,Premier League,€651.48m,€751.83m,15%
+2025-06-01,7,Manchester United,Manchester United,Premier League,€643.10m,€730.20m,14%
+2025-06-01,8,Nottingham Forest,Nottingham Forest,Premier League,€462.15m,€644.70m,40%
+2025-06-01,9,Aston Villa,Aston Villa,Premier League,€592.00m,€546.00m,-8%
+2025-06-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€555.70m,€520.60m,-6%
+2025-06-01,11,Crystal Palace,Crystal Palace,Premier League,€457.50m,€484.53m,6%
+2025-06-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€410.10m,€448.10m,9%
+2025-06-01,13,Brentford FC,Brentford FC,Premier League,€414.08m,€434.90m,5%
+2025-06-01,14,Everton FC,Everton FC,Premier League,€349.55m,€414.60m,19%
+2025-06-01,15,West Ham United,West Ham United,Premier League,€400.30m,€400.80m,0%
+2025-06-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€413.90m,€376.60m,-9%
+2025-06-01,17,Fulham FC,Fulham FC,Premier League,€351.35m,€374.00m,6%
+2025-06-01,18,Sunderland AFC,Sunderland AFC,Championship,€172.65m,€340.00m,97%
+2025-06-01,19,Leeds United,Leeds United,Championship,€211.20m,€316.30m,50%
+2025-06-01,20,Burnley FC,Burnley FC,Championship,€195.95m,,
+2025-05-01,1,Arsenal FC,Arsenal FC,Premier League,€1.13bn,€1.31bn,17%
+2025-05-01,2,Manchester City,Manchester City,Premier League,€1.31bn,€1.21bn,-7%
+2025-05-01,3,Liverpool FC,Liverpool FC,Premier League,€993.50m,€1.15bn,16%
+2025-05-01,4,Chelsea FC,Chelsea FC,Premier League,€922.00m,€1.14bn,23%
+2025-05-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€836.10m,€920.60m,10%
+2025-05-01,6,Newcastle United,Newcastle United,Premier League,€635.00m,€751.83m,18%
+2025-05-01,7,Manchester United,Manchester United,Premier League,€699.25m,€730.20m,4%
+2025-05-01,8,Nottingham Forest,Nottingham Forest,Premier League,€447.18m,€644.70m,44%
+2025-05-01,9,Aston Villa,Aston Villa,Premier League,€627.50m,€546.00m,-13%
+2025-05-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€555.60m,€520.60m,-6%
+2025-05-01,11,Crystal Palace,Crystal Palace,Premier League,€441.00m,€484.53m,10%
+2025-05-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€435.35m,€448.10m,3%
+2025-05-01,13,Brentford FC,Brentford FC,Premier League,€417.10m,€434.90m,4%
+2025-05-01,14,Everton FC,Everton FC,Premier League,€365.10m,€414.60m,14%
+2025-05-01,15,West Ham United,West Ham United,Premier League,€454.30m,€400.80m,-12%
+2025-05-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€408.80m,€376.60m,-8%
+2025-05-01,17,Fulham FC,Fulham FC,Premier League,€362.00m,€374.00m,3%
+2025-05-01,18,Sunderland AFC,Sunderland AFC,Championship,€141.98m,€340.00m,140%
+2025-05-01,19,Leeds United,Leeds United,Championship,€189.50m,€316.30m,67%
+2025-05-01,20,Burnley FC,Burnley FC,Championship,€195.80m,,
+2025-04-01,1,Arsenal FC,Arsenal FC,Premier League,€1.13bn,€1.31bn,17%
+2025-04-01,2,Manchester City,Manchester City,Premier League,€1.31bn,€1.21bn,-7%
+2025-04-01,3,Liverpool FC,Liverpool FC,Premier League,€993.50m,€1.15bn,16%
+2025-04-01,4,Chelsea FC,Chelsea FC,Premier League,€922.00m,€1.14bn,23%
+2025-04-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€836.10m,€920.60m,10%
+2025-04-01,6,Newcastle United,Newcastle United,Premier League,€635.00m,€751.83m,18%
+2025-04-01,7,Manchester United,Manchester United,Premier League,€694.25m,€730.20m,5%
+2025-04-01,8,Nottingham Forest,Nottingham Forest,Premier League,€447.18m,€644.70m,44%
+2025-04-01,9,Aston Villa,Aston Villa,Premier League,€627.50m,€546.00m,-13%
+2025-04-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€555.60m,€520.60m,-6%
+2025-04-01,11,Crystal Palace,Crystal Palace,Premier League,€441.00m,€484.53m,10%
+2025-04-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€435.35m,€448.10m,3%
+2025-04-01,13,Brentford FC,Brentford FC,Premier League,€417.10m,€434.90m,4%
+2025-04-01,14,Everton FC,Everton FC,Premier League,€365.10m,€414.60m,14%
+2025-04-01,15,West Ham United,West Ham United,Premier League,€454.30m,€400.80m,-12%
+2025-04-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€408.80m,€376.60m,-8%
+2025-04-01,17,Fulham FC,Fulham FC,Premier League,€362.00m,€374.00m,3%
+2025-04-01,18,Sunderland AFC,Sunderland AFC,Championship,€141.98m,€340.00m,140%
+2025-04-01,19,Leeds United,Leeds United,Championship,€189.50m,€316.30m,67%
+2025-04-01,20,Burnley FC,Burnley FC,Championship,€195.80m,,
+2025-03-01,1,Arsenal FC,Arsenal FC,Premier League,€1.15bn,€1.31bn,14%
+2025-03-01,2,Manchester City,Manchester City,Premier League,€1.30bn,€1.21bn,-7%
+2025-03-01,3,Liverpool FC,Liverpool FC,Premier League,€967.50m,€1.15bn,19%
+2025-03-01,4,Chelsea FC,Chelsea FC,Premier League,€928.50m,€1.14bn,22%
+2025-03-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€846.10m,€920.60m,9%
+2025-03-01,6,Newcastle United,Newcastle United,Premier League,€606.00m,€751.83m,24%
+2025-03-01,7,Manchester United,Manchester United,Premier League,€724.05m,€730.20m,1%
+2025-03-01,8,Nottingham Forest,Nottingham Forest,Premier League,€406.18m,€644.70m,59%
+2025-03-01,9,Aston Villa,Aston Villa,Premier League,€642.15m,€546.00m,-15%
+2025-03-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€549.40m,€520.60m,-5%
+2025-03-01,11,Crystal Palace,Crystal Palace,Premier League,€428.53m,€484.53m,13%
+2025-03-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€367.70m,€448.10m,22%
+2025-03-01,13,Brentford FC,Brentford FC,Premier League,€422.85m,€434.90m,3%
+2025-03-01,14,Everton FC,Everton FC,Premier League,€357.10m,€414.60m,16%
+2025-03-01,15,West Ham United,West Ham United,Premier League,€495.70m,€400.80m,-19%
+2025-03-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€390.80m,€376.60m,-4%
+2025-03-01,17,Fulham FC,Fulham FC,Premier League,€348.80m,€374.00m,7%
+2025-03-01,18,Sunderland AFC,Sunderland AFC,Championship,€124.88m,€340.00m,172%
+2025-03-01,19,Leeds United,Leeds United,Championship,€173.50m,€316.30m,82%
+2025-03-01,20,Burnley FC,Burnley FC,Championship,€178.80m,,
+2025-02-01,1,Arsenal FC,Arsenal FC,Premier League,€1.15bn,€1.31bn,14%
+2025-02-01,2,Manchester City,Manchester City,Premier League,€1.29bn,€1.21bn,-6%
+2025-02-01,3,Liverpool FC,Liverpool FC,Premier League,€967.50m,€1.15bn,19%
+2025-02-01,4,Chelsea FC,Chelsea FC,Premier League,€1.03bn,€1.14bn,10%
+2025-02-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€791.10m,€920.60m,16%
+2025-02-01,6,Newcastle United,Newcastle United,Premier League,€624.00m,€751.83m,21%
+2025-02-01,7,Manchester United,Manchester United,Premier League,€773.75m,€730.20m,-6%
+2025-02-01,8,Nottingham Forest,Nottingham Forest,Premier League,€431.18m,€644.70m,50%
+2025-02-01,9,Aston Villa,Aston Villa,Premier League,€545.65m,€546.00m,0%
+2025-02-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€588.80m,€520.60m,-12%
+2025-02-01,11,Crystal Palace,Crystal Palace,Premier League,€419.03m,€484.53m,16%
+2025-02-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€367.55m,€448.10m,22%
+2025-02-01,13,Brentford FC,Brentford FC,Premier League,€422.85m,€434.90m,3%
+2025-02-01,14,Everton FC,Everton FC,Premier League,€343.60m,€414.60m,21%
+2025-02-01,15,West Ham United,West Ham United,Premier League,€439.30m,€400.80m,-9%
+2025-02-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€383.30m,€376.60m,-2%
+2025-02-01,17,Fulham FC,Fulham FC,Premier League,€347.80m,€374.00m,8%
+2025-02-01,18,Sunderland AFC,Sunderland AFC,Championship,€128.08m,€340.00m,166%
+2025-02-01,19,Leeds United,Leeds United,Championship,€173.50m,€316.30m,82%
+2025-02-01,20,Burnley FC,Burnley FC,Championship,€164.95m,,
+2025-01-01,1,Arsenal FC,Arsenal FC,Premier League,€1.16bn,€1.31bn,14%
+2025-01-01,2,Manchester City,Manchester City,Premier League,€1.21bn,€1.21bn,0%
+2025-01-01,3,Liverpool FC,Liverpool FC,Premier League,€968.40m,€1.15bn,19%
+2025-01-01,4,Chelsea FC,Chelsea FC,Premier League,€1.02bn,€1.14bn,11%
+2025-01-01,5,Tottenham Hotspur,Tottenham Hotspur,Premier League,€783.80m,€920.60m,18%
+2025-01-01,6,Newcastle United,Newcastle United,Premier League,€642.35m,€751.83m,17%
+2025-01-01,7,Manchester United,Manchester United,Premier League,€794.65m,€730.20m,-8%
+2025-01-01,8,Nottingham Forest,Nottingham Forest,Premier League,€442.00m,€644.70m,46%
+2025-01-01,9,Aston Villa,Aston Villa,Premier League,€601.95m,€546.00m,-9%
+2025-01-01,10,Brighton & Hove Albion,Brighton & Hove Albion,Premier League,€618.60m,€520.60m,-16%
+2025-01-01,11,Crystal Palace,Crystal Palace,Premier League,€425.40m,€484.53m,14%
+2025-01-01,12,AFC Bournemouth,AFC Bournemouth,Premier League,€391.35m,€448.10m,15%
+2025-01-01,13,Brentford FC,Brentford FC,Premier League,€417.93m,€434.90m,4%
+2025-01-01,14,Everton FC,Everton FC,Premier League,€343.10m,€414.60m,21%
+2025-01-01,15,West Ham United,West Ham United,Premier League,€439.30m,€400.80m,-9%
+2025-01-01,16,Wolverhampton Wanderers,Wolverhampton Wanderers,Premier League,€377.80m,€376.60m,0%
+2025-01-01,17,Fulham FC,Fulham FC,Premier League,€347.80m,€374.00m,8%
+2025-01-01,18,Sunderland AFC,Sunderland AFC,Championship,€116.58m,€340.00m,192%
+2025-01-01,19,Leeds United,Leeds United,Championship,€177.00m,€316.30m,79%
+2025-01-01,20,Burnley FC,Burnley FC,Championship,€179.85m,,

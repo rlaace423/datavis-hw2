@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <title>Line Chart</title>
+  <title>EPL Club Value over Time</title>
   <meta charset="utf-8"/>
   <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
@@ -76,9 +76,7 @@
 
   const fullData = await loadClubValueData();
 
-  // 등장하는 클럽 리스트 추출
-  // const clubs = [...new Set(fullData.map(d => d.club_name))].sort();
-  // 고정 클럽 리스트 (색상 고정을 위해)
+  // 클럽 정보
   const CLUB_META = {
     'AFC Bournemouth': { color: '#DA020E', logo: 'images/club_logos/AFC_Bournemouth_logo_(introduced_2013).svg' },
     'Arsenal FC': { color: '#EF0107', logo: 'images/club_logos/Arsenal_FC_logo.svg' },

@@ -508,7 +508,7 @@ export async function loadClubValueData() {
   return rows;
 }
 
-export function buildClubValueLineSpec(clubValues) {
+export function buildClubValueLineSpec(clubValues, clubs, colorRange) {
   return {
     width: 900,
     height: 500,
@@ -542,6 +542,11 @@ export function buildClubValueLineSpec(clubValues) {
         type: 'nominal',
         title: 'Club',
         legend: { title: 'Club (click to highlight)' },
+        // 🔥 여기서 도메인/레인지 고정
+        scale: {
+          domain: clubs,
+          range: colorRange,
+        },
       },
       opacity: {
         condition: { param: 'clubHighlight', value: 1 },

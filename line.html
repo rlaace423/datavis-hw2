@@ -1,14 +1,72 @@
 <!doctype html>
-<html>
+<html lang="ko">
 <head>
   <title>Line Chart</title>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.0.2"></script>
+
+  <style>
+      /* 컨트롤 영역: 가로로 배치 + 줄바꿈 */
+      #controls {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-bottom: 12px;
+      }
+
+      /* 클럽 버튼(타일) 공통 스타일 */
+      .club-tile {
+          display: flex;
+          align-items: center; /* 로고 + 텍스트 수직 중앙 정렬 */
+          justify-content: flex-start;
+          padding: 4px 8px;
+          min-width: 140px; /* “일반적인 버튼 사이즈” 정도 */
+          height: 40px; /* 버튼 높이 통일 */
+          box-sizing: border-box;
+          border-radius: 6px;
+          border: 1px solid #ddd;
+          cursor: pointer;
+          background: #f9f9f9;
+          font-size: 12px;
+          line-height: 1.2;
+          transition: background 0.15s, box-shadow 0.15s, transform 0.1s, opacity 0.15s;
+      }
+
+      .club-tile:hover {
+          background: #ffffff;
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+          transform: translateY(-1px);
+      }
+
+      /* 비활성화된 상태(지금 opacity로 구분하는 부분) */
+      .club-tile.inactive {
+          opacity: 0.35;
+      }
+
+      /* 로고 크기 통일 */
+      .club-logo {
+          width: 24px;
+          height: 24px;
+          object-fit: contain; /* svg, png 섞여도 깔끔하게 */
+          margin-right: 6px;
+          flex-shrink: 0;
+      }
+
+      /* 텍스트는 한 줄, 너무 길면 … 처리 옵션도 가능 */
+      .club-name {
+          font-size: 12px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  </style>
 </head>
 <body>
-<div><div id="vis"></div></div>
+<h1>EPL Club Value over Time</h1>
+<div id="controls" style="width: 900px"></div>
+<div id="vis"></div>
 
 <script type="module">
   import {
@@ -16,10 +74,101 @@
     buildClubValueLineSpec,
   } from './index.js';
 
-  const data = await loadClubValueData();
+  const fullData = await loadClubValueData();
 
-  // 월별 각 EPL 클럽의 구단 가치 변화 라인 차트
-  vegaEmbed('#vis', buildClubValueLineSpec(data), { actions: true });
+  // 등장하는 클럽 리스트 추출
+  // const clubs = [...new Set(fullData.map(d => d.club_name))].sort();
+  // 고정 클럽 리스트 (색상 고정을 위해)
+  const CLUB_META = {
+    'AFC Bournemouth': { color: '#DA020E', logo: 'images/club_logos/AFC_Bournemouth_logo_(introduced_2013).svg' },
+    'Arsenal FC': { color: '#EF0107', logo: 'images/club_logos/Arsenal_FC_logo.svg' },
+    'Aston Villa': { color: '#95BFE5', logo: 'images/club_logos/Aston_Villa_FC_2015.webp' },
+    'Brentford FC': { color: '#D20000', logo: 'images/club_logos/Brentford_FC_2017.webp' },
+    'Brighton & Hove Albion': { color: '#0057B8', logo: 'images/club_logos/Brighton_&_Hove_Albion_FC_logo.svg' },
+    'Burnley FC': { color: '#7A003C', logo: 'images/club_logos/burnley.svg' },
+    'Chelsea FC': { color: '#034694', logo: 'images/club_logos/Chelsea_FC_logo.svg' },
+    'Crystal Palace': { color: '#C4122E', logo: 'images/club_logos/Crystal_Palace_FC_logo_(introduced_2013).svg' },
+    'Everton FC': { color: '#003399', logo: 'images/club_logos/Everton_FC_logo_(introduced_2014).svg' },
+    'Fulham FC': { color: '#CC0000', logo: 'images/club_logos/Fulham_FC_logo.svg' },
+    'Leeds United': { color: '#FFCD00', logo: 'images/club_logos/Leeds_United_AFC_logo.svg' },
+    'Liverpool FC': { color: '#C8102E', logo: 'images/club_logos/Liverpool_FC_logo.svg' },
+    'Manchester City': { color: '#6CABDD', logo: 'images/club_logos/Manchester_City_2016.svg' },
+    'Manchester United': { color: '#DA020E', logo: 'images/club_logos/Manchester_United_FC_logo.svg' },
+    'Newcastle United': { color: '#241F20', logo: 'images/club_logos/Newcastle_United_FC_logo.svg' },
+    'Nottingham Forest': {
+      color: '#DD0000',
+      logo: 'images/club_logos/Nottingham_Forest_FC_logo_(red,_two_stars_below).webp'
+    },
+    'Sunderland AFC': { color: '#FD1220', logo: 'images/club_logos/sunderland.svg' },
+    'Tottenham Hotspur': { color: '#132257', logo: 'images/club_logos/Tottenham_Hotspur_FC_logo.svg' },
+    'West Ham United': { color: '#7C2C3B', logo: 'images/club_logos/West_Ham_United_FC_logo_(2016).svg' },
+    'Wolverhampton Wanderers': { color: '#FDB462', logo: 'images/club_logos/Wolverhampton_Wanderers_FC_logo.svg' },
+  }
+  const clubs = Object.keys(CLUB_META);
+  const colorRange = clubs.map(club => CLUB_META[club].color);
+
+  // 현재 표시할 클럽들 (처음엔 전체 표시)
+  const selectedClubs = new Set(clubs);
+
+  const controls = document.getElementById('controls');
+
+  // 버튼 렌더링
+  clubs.forEach(club => {
+    const meta = CLUB_META[club] || {};
+    const tile = document.createElement('div');
+    tile.className = 'club-tile';
+    tile.setAttribute('role', 'button');
+    tile.setAttribute('tabindex', '0');
+
+    const img = document.createElement('img');
+    img.className = 'club-logo';
+
+    if (meta.logo) {
+      img.src = meta.logo;  // PNG든 SVG든 상관 없음
+      img.alt = club;
+    } else {
+      img.style.visibility = 'hidden';
+    }
+
+    const span = document.createElement('span');
+    span.className = 'club-name';
+    span.textContent = club;
+
+    tile.appendChild(img);
+    tile.appendChild(span);
+
+    // 필요하면 타일 배경에 팀 컬러를 살짝 사용해도 됨
+    if (meta.color) {
+      tile.style.borderColor = meta.color;
+      tile.style.background = meta.color + '11'; // 살짝만 색 입히고 싶을 때
+    }
+
+    // 토글 상태 표시용
+    tile.dataset.active = 'true';
+
+    tile.onclick = () => {
+      if (selectedClubs.has(club)) {
+        selectedClubs.delete(club);
+        tile.dataset.active = 'false';
+        tile.classList.add('inactive');   // 👈 클래스 추가
+      } else {
+        selectedClubs.add(club);
+        tile.dataset.active = 'true';
+        tile.classList.remove('inactive'); // 👈 클래스 제거
+      }
+      render();
+    };
+
+    controls.appendChild(tile);
+  });
+
+  async function render() {
+    const filtered = fullData.filter(d => selectedClubs.has(d.club_name));
+    const spec = buildClubValueLineSpec(filtered, clubs, colorRange);
+    await vegaEmbed('#vis', spec, { actions: false });
+  }
+
+  render();
 </script>
 </body>
 </html>
